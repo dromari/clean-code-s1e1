@@ -18,6 +18,10 @@
 
 .guide .details {
   font-family: "fantasy", cursive;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -73,8 +77,7 @@ h3 {
 }
 
 /* Heading */
-h3,
-.label-new-task {
+h3 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -104,7 +107,7 @@ h3,
 }
 
 /* New Task */
-.label-new-task {
+.caprion-add-item {
   display: block;
   margin: 0 0 20px;
 }
