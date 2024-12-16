@@ -1,0 +1,181 @@
+/*Reset styles*/
+/*Tag selector "ul" is used for intentionally resetting the default styles).*/
+
+ul {
+  margin: 0;
+  padding: 0px;
+}
+
+/* Basic Style */
+.body {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: "Lato", sans-serif;
+}
+
+.guide {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+
+.guide__header {
+  display: none;
+}
+
+.guide__img {
+  width: 100%;
+}
+
+.guide__details {
+  font-family: "fantasy", cursive;
+}
+
+@media (max-width: 768px) {
+  .guide {
+    text-align: center;
+  }
+}
+
+.main {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
+.list-item__label,
+.list-item__input,
+.task-wrapper__input {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.task-wrapper {
+  display: flex;
+}
+
+.list-item,
+.section__header {
+  list-style: none;
+}
+
+#new-task,
+.list-item__input,
+.button {
+  outline: none;
+}
+
+.button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #3a3a3a;
+}
+
+/* Heading */
+.section__header {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#new-task,
+.list-item__input {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  color: #888;
+}
+
+#new-task:focus,
+.list-item__input:focus {
+  color: #333;
+}
+
+/* New Task */
+.section__header_first {
+  display: block;
+  margin: 0 0 20px;
+}
+
+#new-task {
+  width: 318px;
+}
+
+/* Task list */
+.list-item {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item>* {
+  vertical-align: middle;
+}
+
+.list-item__checkbox {
+  margin: 0 10px;
+}
+
+.list-item__label {
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
+}
+
+.list-item__input {
+  width: 226px;
+}
+
+.delete-button__img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.delete-button__img:hover {
+  transform: rotateZ(0);
+}
+
+/* Completed */
+#completed-tasks .list-item__label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+.list-item__input {
+  display: none;
+}
+
+.edit-mode>.list-item__input {
+  display: inline-block;
+  width: 224px
+}
+
+.edit-mode .list-item__label {
+  display: none;
+}
